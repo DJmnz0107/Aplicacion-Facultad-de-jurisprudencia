@@ -35,7 +35,7 @@
         android:autoSizeMaxTextSize="1000dp"
         android:autoSizeMinTextSize="1dp"
         android:autoSizeTextType="uniform"
-        android:fontFamily="sans-serif"
+        android:fontFamily="@font/aleodos"
         android:text="Bienvenid@ a la aplicación  de consultas de la Facultad de Jurisprudencia."
         android:textAlignment="center"
         android:textColor="#FFFFFF"
@@ -46,14 +46,14 @@
         app:layout_constraintTop_toBottomOf="@+id/view" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnSiguiente"
         android:layout_width="237dp"
         android:layout_height="64dp"
         android:background="@drawable/botonbackground"
-        android:fontFamily="sans-serif"
+        android:fontFamily="@font/aleodos"
         android:text="Ingresar a la página principal"
         android:textColor="#000000"
-        android:textSize="13sp"
+        android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/guideline6"
         app:layout_constraintDimensionRatio="3:1"
@@ -80,6 +80,7 @@
         android:autoSizeMaxTextSize="1000dp"
         android:autoSizeMinTextSize="1dp"
         android:autoSizeTextType="uniform"
+        android:fontFamily="@font/aleodos"
         android:text="Encuentra más información en la página oficial, pulsando la imagen de la izquierda."
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="@+id/view2"
@@ -88,7 +89,7 @@
         app:layout_constraintStart_toStartOf="@+id/guideline" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imgLink"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"

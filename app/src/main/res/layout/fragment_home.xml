@@ -9,75 +9,67 @@
 
     <View
         android:id="@+id/view4"
-        android:layout_width="wrap_content"
-        android:layout_height="78dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/guideline13"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:fontFamily="@font/aleodos"
-        android:text="Facultad de Jurisprudencia - UES"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/view4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.208" />
+        app:layout_constraintTop_toTopOf="@+id/guideline12"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="0dp"
-        android:layout_height="137dp"
+        android:layout_height="0dp"
         android:fontFamily="@font/aleodos"
         android:text="¿Sobre qué proceso deseas conocer más información?"
         android:textColor="#000000"
+        android:paddingLeft="20dp"
         android:textSize="36sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline9"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline8" />
+        app:layout_constraintTop_toTopOf="@+id/guideline8"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="0dp"
-        android:layout_height="59dp"
+        android:layout_height="0dp"
         android:fontFamily="@font/aleodos"
-        android:text="Selecciona alguna de las opciones que se encuentran acá para saber más sobre estas"
+        android:paddingLeft="20dp"
+        android:text="Selecciona alguna de las opciones que se encuentran acá para saber más sobre estas."
         android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline10"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline9" />
+        app:layout_constraintTop_toTopOf="@+id/guideline9"
+        app:layout_constraintVertical_bias="0.462" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="99dp" />
+        app:layout_constraintGuide_percent="0.19" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="267dp" />
+        app:layout_constraintGuide_percent="0.39" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="350dp" />
+        app:layout_constraintGuide_percent="0.5" />
 
     <ScrollView
         android:layout_width="0dp"
@@ -138,6 +130,8 @@
                     android:layout_height="39dp"
                     android:layout_marginBottom="16dp"
                     android:background="@drawable/backgroundbuttonhome"
+                    android:backgroundTint="#FFFFFF"
+                    android:fontFamily="@font/aleodos"
                     android:paddingBottom="5dp"
                     android:text="Conocer más"
                     android:textColor="#790016"
@@ -150,5 +144,42 @@
 
         </LinearLayout>
     </ScrollView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="0dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aleodos"
+        android:text="Facultad de Jurisprudencia - UES"
+        android:textColor="#790016"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="59dp"
+        android:layout_height="56dp"
+        android:src="@drawable/logofacultad"
+        app:layout_constraintBottom_toBottomOf="@+id/view4"
+        app:layout_constraintEnd_toEndOf="@+id/view4"
+        app:layout_constraintStart_toStartOf="@+id/view4"
+        app:layout_constraintTop_toTopOf="@+id/view4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

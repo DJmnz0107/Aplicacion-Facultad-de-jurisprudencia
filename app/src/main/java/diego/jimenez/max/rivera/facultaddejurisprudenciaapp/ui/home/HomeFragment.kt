@@ -4,9 +4,12 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
+import diego.jimenez.max.rivera.facultaddejurisprudenciaapp.R
 import diego.jimenez.max.rivera.facultaddejurisprudenciaapp.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
@@ -27,6 +30,12 @@ class HomeFragment : Fragment() {
 
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
+
+        val btnAcademico = root.findViewById<Button>(R.id.btnAcademico)
+
+        btnAcademico.setOnClickListener {
+            findNavController().navigate(R.id.haciaIngresoExpediente)
+        }
 
 
         return root

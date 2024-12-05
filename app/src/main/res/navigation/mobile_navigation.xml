@@ -9,7 +9,14 @@
         android:id="@+id/navigation_home"
         android:name="diego.jimenez.max.rivera.facultaddejurisprudenciaapp.ui.home.HomeFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home">
+
+        <action android:id="@+id/haciaIngresoExpediente"
+            app:destination="@+id/fragment_ingresoexpediente"
+            />
+    </fragment>
+
+
 
     <fragment
         android:id="@+id/navigation_dashboard"
@@ -22,4 +29,12 @@
         android:name="diego.jimenez.max.rivera.facultaddejurisprudenciaapp.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/fragment_ingresoexpediente"
+        android:name="diego.jimenez.max.rivera.facultaddejurisprudenciaapp.fragment_ingresoexpediente"
+        android:label="fragment_ingresoexpediente"
+        tools:layout="@layout/fragment_ingresoexpediente">
+
+    </fragment>
+
 </navigation>
